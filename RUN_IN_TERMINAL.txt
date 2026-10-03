@@ -1,0 +1,69 @@
+EMPLOYEE SALARY ANALYSIS — QUICK TERMINAL GUIDE
+===============================================
+
+1. Open PowerShell.
+
+2. Go to the project folder, for example:
+   cd "D:\veda technology\employee-salary-analysis"
+
+3. Check Python:
+   py --version
+
+4. Run the terminal analysis:
+   py salary_analysis.py
+
+5. Start the web application:
+   py app.py
+
+6. Open this in your browser:
+   http://127.0.0.1:8000
+
+7. Stop the web server:
+   Ctrl + C
+
+
+GITHUB PUSH — AFTER GIT IS INSTALLED
+====================================
+
+A. Create the repository in the browser first.
+   Repository name:
+   employee-salary-analysis
+
+   Visibility:
+   Public
+
+   IMPORTANT:
+   Do NOT select:
+   - Add a README
+   - Add .gitignore
+   - Choose a license
+
+B. Back in PowerShell:
+   cd "D:\veda technology\employee-salary-analysis"
+
+C. Verify Git:
+   git --version
+
+D. Initialize:
+   git init -b main
+
+E. Add files:
+   git add .
+
+F. Check what will be committed:
+   git status
+
+G. Commit:
+   git commit -m "Complete Task 3 employee salary analysis"
+
+H. Connect the GitHub repository:
+   git remote add origin https://github.com/PranathiM15/employee-salary-analysis.git
+
+I. Verify:
+   git remote -v
+
+J. Push:
+   git push -u origin main
+
+If GitHub asks you to sign in, complete GitHub's sign-in/authentication flow.
+Do not put a password or API key inside any source file.

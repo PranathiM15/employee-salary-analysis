@@ -1,0 +1,81 @@
+{
+  "employees": [
+    {
+      "id": "EMP001",
+      "name": "Aarav Mehta",
+      "role": "Software Engineer",
+      "department": "Engineering",
+      "salary": 72000
+    },
+    {
+      "id": "EMP002",
+      "name": "Diya Rao",
+      "role": "Data Analyst",
+      "department": "Analytics",
+      "salary": 68000
+    },
+    {
+      "id": "EMP003",
+      "name": "Kabir Shah",
+      "role": "Product Designer",
+      "department": "Design",
+      "salary": 61000
+    },
+    {
+      "id": "EMP004",
+      "name": "Anaya Iyer",
+      "role": "ML Engineer",
+      "department": "AI & ML",
+      "salary": 94000
+    },
+    {
+      "id": "EMP005",
+      "name": "Rohan Nair",
+      "role": "Backend Developer",
+      "department": "Engineering",
+      "salary": 83000
+    },
+    {
+      "id": "EMP006",
+      "name": "Ishita Menon",
+      "role": "HR Executive",
+      "department": "People",
+      "salary": 54000
+    },
+    {
+      "id": "EMP007",
+      "name": "Vivaan Kapoor",
+      "role": "Cloud Engineer",
+      "department": "Infrastructure",
+      "salary": 89000
+    },
+    {
+      "id": "EMP008",
+      "name": "Meera Joshi",
+      "role": "QA Engineer",
+      "department": "Quality",
+      "salary": 65000
+    },
+    {
+      "id": "EMP009",
+      "name": "Arjun Rao",
+      "role": "Frontend Developer",
+      "department": "Engineering",
+      "salary": 76000
+    },
+    {
+      "id": "EMP010",
+      "name": "Sara Thomas",
+      "role": "Business Analyst",
+      "department": "Analytics",
+      "salary": 70000
+    },
+    {
+      "id": "EM011",
+      "name": "PRANAV",
+      "role": "SOFTWARE DEVELOPER",
+      "department": "ENGINEERING",
+      "salary": 100000.0
+    }
+  ]
+}

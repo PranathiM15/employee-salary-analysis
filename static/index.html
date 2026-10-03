@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Salary Lab | Employee Salary Analysis</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">AS</div>
+      <div>
+        <strong>AURORA SALARY LAB</strong>
+        <span>Task 3 · Employee Salary Analysis</span>
+      </div>
+    </div>
+    <div class="status"><span class="pulse"></span> Python Analysis Online</div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">VEDA TECHNOLOGY · AI & ML TRACK</p>
+        <h1>Employee <span>Salary</span> Analysis</h1>
+        <p class="hero-copy">
+          Enter your own employee salary records below. The Python backend stores
+          your data and calculates the total, average, highest and lowest salary.
+        </p>
+      </div>
+      <div class="hero-badge">
+        <small>RECORDS</small>
+        <strong id="employeeCount">0</strong>
+        <span>employees</span>
+      </div>
+    </section>
+
+    <section class="entry-panel panel">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">MANUAL DATA ENTRY</p>
+          <h2>Add employee salary data</h2>
+        </div>
+        <button id="loadSample" class="ghost-button" type="button">Load Example Data</button>
+      </div>
+
+      <form id="employeeForm" class="entry-grid">
+        <label>
+          Employee ID
+          <input id="id" name="id" placeholder="EMP011" required>
+        </label>
+        <label>
+          Employee Name
+          <input id="name" name="name" placeholder="Your employee name" required>
+        </label>
+        <label>
+          Role
+          <input id="role" name="role" placeholder="Software Engineer" required>
+        </label>
+        <label>
+          Department
+          <input id="department" name="department" placeholder="Engineering" required>
+        </label>
+        <label>
+          Salary (₹ / year)
+          <input id="salary" name="salary" type="number" min="1" step="0.01" placeholder="75000" required>
+        </label>
+        <button class="primary-button" type="submit">+ Add Employee</button>
+      </form>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <div class="stat-icon">Σ</div>
+        <div><span>Total Salary</span><strong id="total">₹0</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">μ</div>
+        <div><span>Average Salary</span><strong id="average">₹0</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">↑</div>
+        <div><span>Highest Salary</span><strong id="highest">₹0</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">↓</div>
+        <div><span>Lowest Salary</span><strong id="lowest">₹0</strong></div>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">SALARY DISTRIBUTION</p>
+            <h2>Compare employee salaries</h2>
+          </div>
+          <span class="mini-label">₹ / year</span>
+        </div>
+        <div id="salaryChart" class="chart">
+          <div class="empty-state">Add employee data to generate the salary chart.</div>
+        </div>
+      </article>
+
+      <article class="panel spotlight">
+        <p class="eyebrow">EXTREMES</p>
+        <h2>Salary range</h2>
+        <div class="range-line">
+          <div>
+            <span>Lowest</span>
+            <strong id="lowestPerson">—</strong>
+          </div>
+          <div class="range-arrow">→</div>
+          <div class="right">
+            <span>Highest</span>
+            <strong id="highestPerson">—</strong>
+          </div>
+        </div>
+        <div class="range-track"><span id="rangeFill"></span></div>
+        <p class="muted">
+          The range updates automatically whenever you add or remove an employee.
+        </p>
+      </article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading table-heading">
+        <div>
+          <p class="eyebrow">YOUR ORIGINAL DATA</p>
+          <h2>Employee records</h2>
+        </div>
+        <div class="table-actions">
+          <input id="search" type="search" placeholder="Search employee or role…">
+          <button id="clearAll" class="danger-button" type="button">Clear All</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th><th>Employee</th><th>Role</th><th>Department</th><th>Salary</th><th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="interview">
+      <div>
+        <p class="eyebrow">INTERVIEW READY</p>
+        <h2>Core concepts used</h2>
+      </div>
+      <div class="concepts">
+        <span>List</span><span>sum()</span><span>len()</span><span>max()</span><span>min()</span><span>Arithmetic mean</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Aurora Salary Lab</span>
+    <span>Built with Python standard library · Terminal-first</span>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+MANUAL EMPLOYEE SALARY ENTRY
+
+1. Start the app:
+   py app.py
+
+2. Open:
+   http://127.0.0.1:8000
+
+3. Fill Employee ID, Name, Role, Department and Salary.
+
+4. Click "+ Add Employee".
+
+5. The record is saved automatically to:
+   data\salaries.json
+
+6. The Total, Average, Highest and Lowest values update automatically.
+
+7. Use "Remove" to delete one employee.
+8. Use "Clear All" to start a completely new dataset.
+9. "Load Example Data" is optional; use it only when you need sample records.
+
+This is the manual dataset workflow requested by Task 3.
